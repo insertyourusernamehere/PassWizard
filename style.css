@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #80A9D9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.title{
+    position: fixed;
+    top: -10px;
+    left: 30px;
+    color: #303030;
+    margin-bottom: 20px; 
+    font-family: 'Pacifico';
+    font-size: large;
+}
+
+.text-1{
+    margin-left: 35px;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Quicksand;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.45px;
+}
+
+.password_container{
+    width: 600px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
+
+input[type="text"] {
+    font-family: 'Open Sans';
+    border: none;
+    display: flex;
+    width: 95%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 1px 9px 50px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+button {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+div.generate{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content:space-between;
+    color: #303030;
+}
+
+span.gen_text{
+    padding-left: 10px;
+}
+
+button.generate{
+    color: #FFF;
+
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.805px;
+
+    padding-left: 10px;
+    margin: auto;
+    background-color: #0094FF;
+    color: #fff;
+    margin-right: 10px;
+    align-items: center;
+    box-shadow: 1px 9px 50px 0px rgba(0, 0, 0, .10);
+
+}
+
+button.copy{
+    border:none;
+    width: 80px;
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 1px 9px 50px 0px rgba(0, 0, 0, 0.10);
+}
+
+button.generate:hover {
+    background-color: #0056b3;
+}
+
+button.copy:hover{
+    background-color: #ccc;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+label {
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    letter-spacing: .5px;
+    
+}
+
+
+div.rangeslider{
+    padding-bottom: 15px;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+div.git-logo{
+    position: fixed;
+    right:20px;
+    bottom:10px;
+}

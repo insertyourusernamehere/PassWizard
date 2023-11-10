@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Wizzard</title>
+    <link rel="icon" href="/assets/favicon.png" type="icon">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>PassWizard</h1>
+    </div>
+    <div>
+            <div class="text-1">
+                <span>
+                    Weave Your Digital Spells for Security.
+                </span>
+            </div>
+            <div class="password_container">
+                <input type="text" id="password" readonly>
+                <button class="copy" id="copy"><img src="/assets/content_copy.png" alt="copy" height="25px"></button>
+            </div>
+            <div class="generate">
+                <div class="options">
+                    <div class="rangeslider">
+                        <span>Length</span>
+                        <input type="range" id="lengthSlider" min="8" max="16" value="10" oninput="updateslidervalue()">
+                        <span id="current-value"></span>
+                    </div>      
+    
+                 <label>
+                    <input type="checkbox" name="includeUppercase" value="true" checked>
+                    Uppercase
+                  </label>
+                  
+                  <label>
+                    <input type="checkbox" name="includeNumbers" value="true" checked>
+                    Numbers
+                  </label>
+                  
+                  <label>
+                    <input type="checkbox" name="includeSpecialChars" value="true">
+                    Symbols
+                  </label>
+                </div>  
+                <button class="generate" id="generate"><span class="gen_text">GENERATE</span><img src="/assets/replay.png" alt="Generate" height="30px"></button>
+            </div>          
+    </div>
+    <div class="git-logo">
+        <a href="https://github.com" target="_blank">
+            <button>
+                <img src="/assets/github-mark 1.png" alt="GitHub Logo" width="30px">
+            </button>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
