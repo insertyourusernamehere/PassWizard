@@ -14,3 +14,8 @@ A simple web-based password generator that allows you to customize the generated
   - Special symbols (!@#$%^&*, etc.)
 - Copy the generated password to your clipboard with a single click.
 - Easy-to-use web interface.
+- 
+## Planned Updates
+
+- **Password Leak Check:** Verify generated passwords against data breaches.
+-  **Mobile Optimization:** Enjoy PassWizard seamlessly on mobile devices.
