@@ -1,5 +1,6 @@
 # PassWizard - Web Password Generator
 
+![image](https://github.com/insertyourusernamehere/PassWizard/assets/114121995/b18ff1fa-9afb-4372-a9a5-3fb0fe1feac5)
 
 A simple web-based password generator that allows you to customize the generated passwords with options for including numbers, alphabets, special symbols, and more.
 
