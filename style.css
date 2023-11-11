@@ -12,27 +12,30 @@ body {
     margin: 20px;
 }
 
-.title{
+.title {
     position: fixed;
     top: -10px;
     left: 30px;
     color: #303030;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     font-family: 'Pacifico';
     font-size: large;
 }
 
-.text-1{
-    margin-left: 35px;
-    color: rgba(0, 0, 0, 0.50);
+.text-1 {
+    margin-top: 10px;
+    margin-left: 40px;
+    color: rgba(0, 0, 0, 0.40);
     font-family: Quicksand;
     font-size: 15px;
     font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.45px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.50px;
+    padding-bottom: 5px;
 }
 
-.password_container{
+.password_container {
     width: 600px;
     gap: 10px;
     display: flex;
@@ -40,24 +43,24 @@ body {
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 30px;
     padding-top: 5px;
 }
 
 input[type="text"] {
     font-family: 'Open Sans';
+    font-size: 20px;
     border: none;
+    letter-spacing: .5px;
     display: flex;
     width: 95%;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 20px;
-    font-size: 20px;
     border-radius: 50px;
     background: #FFF;
     box-shadow: 1px 9px 50px 0px rgba(0, 0, 0, 0.10);
+    height: 30px;
+    padding-left: 20px;
 }
-
 
 button {
     display: flex;
@@ -72,21 +75,22 @@ button {
     margin-top: 10px;
 }
 
-div.generate{
+div.generate {
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 10px;
+    height: 120px;
     display: flex;
     justify-content:space-between;
     color: #303030;
 }
 
-span.gen_text{
+span.gen_text {
     padding-left: 10px;
 }
 
-button.generate{
+button.generate {
     color: #FFF;
-
     text-align: center;
     font-family: Quicksand;
     font-size: 16px;
@@ -100,13 +104,13 @@ button.generate{
     background-color: #0094FF;
     color: #fff;
     margin-right: 10px;
+    margin-top: 20px;
     align-items: center;
     box-shadow: 1px 9px 50px 0px rgba(0, 0, 0, .10);
-
 }
 
-button.copy{
-    border:none;
+button.copy {
+    border: none;
     width: 80px;
     height: 70px;
     background-color: #fff;
@@ -118,30 +122,85 @@ button.generate:hover {
     background-color: #0056b3;
 }
 
-button.copy:hover{
+#generate_icon {
+    transition: transform 0.5s ease-in-out; 
+}
+
+#generate:active #generate_icon {
+    transform: rotate(360deg);
+}
+
+button.copy:hover {
     background-color: #ccc;
     transition: opacity 0.3s ease-in-out;
 }
-
 
 label {
     text-align: left;
     margin-top: 10px;
     margin-right: 10px;
     letter-spacing: .5px;
-    
 }
 
-
-div.rangeslider{
-    padding-bottom: 15px;
+div.rangeslider {
+    padding-top: 5px;
+    padding-bottom: 10px;
     align-items: center;
     display: flex;
     gap: 5px;
 }
 
-div.git-logo{
+div.git-logo {
     position: fixed;
     right:20px;
     bottom:10px;
+}
+
+.options { 
+    display: none; 
+}
+
+.option-container {
+    flex-flow: column;
+}
+
+#arrowIcon {
+    height: 20px;
+    transition: transform .4s ease;
+}
+
+#toggleButton.clicked #arrowIcon {
+    transform: rotate(-180deg);
+}
+
+button#toggleButton {
+    padding-left: 0px;
+    margin-top: 0px;
+    color: #4d4d4d;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.45px;
+}
+
+.option-container {
+    color: #4d4d4d;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.45px;
+}
+
+.popup-container {
+    display: none;
+    transition: transform 1s ease-in-out;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 1px 9px 50px 0px rgba(0, 0, 0, .10);
 }

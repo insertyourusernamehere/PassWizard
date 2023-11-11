@@ -18,40 +18,50 @@
         <h1>PassWizard</h1>
     </div>
     <div>
-            <div class="text-1">
-                <span>
-                    Weave Your Digital Spells for Security.
-                </span>
-            </div>
-            <div class="password_container">
-                <input type="text" id="password" readonly>
-                <button class="copy" id="copy"><img src="assets/content_copy.png" alt="copy" height="25px"></button>
-            </div>
-            <div class="generate">
+        <div class="text-1">
+            <span>
+                Weave Your Digital Spells for Security . . .
+            </span>
+        </div>
+
+        <div class="password_container">
+            <input type="text" id="password" readonly>
+            <button class="copy" id="copy"><img src="assets/content_copy.png" alt="copy" height="25px"></button>
+        </div>
+
+        <div class="popup-container" id="popupContainer">
+            <p>Password copied!</p>
+        </div>
+
+
+        <div class="generate">
+            <div class="option-container">
+                <button id="toggleButton">More options<img id="arrowIcon" src="assets/arrow.png" alt="Down Arrow"></button>
                 <div class="options">
+                    <label>Length</label>
                     <div class="rangeslider">
-                        <span>Length</span>
                         <input type="range" id="lengthSlider" min="8" max="16" value="10" oninput="updateslidervalue()">
                         <span id="current-value"></span>
                     </div>      
-    
-                 <label>
-                    <input type="checkbox" name="includeUppercase" value="true" checked>
-                    Uppercase
-                  </label>
-                  
-                  <label>
-                    <input type="checkbox" name="includeNumbers" value="true" checked>
-                    Numbers
-                  </label>
-                  
-                  <label>
-                    <input type="checkbox" name="includeSpecialChars" value="true">
-                    Symbols
-                  </label>
+
+                    <label>
+                        <input type="checkbox" name="includeUppercase" value="true" checked>
+                        Uppercase
+                    </label>
+                
+                    <label>
+                        <input type="checkbox" name="includeNumbers" value="true" checked>
+                        Numbers
+                    </label>
+                
+                    <label>
+                        <input type="checkbox" name="includeSpecialChars" value="true">
+                        Symbols
+                    </label>
                 </div>  
-                <button class="generate" id="generate"><span class="gen_text">GENERATE</span><img src="assets/replay.png" alt="Generate" height="30px"></button>
-            </div>          
+            </div>
+            <button class="generate" id="generate"><span class="gen_text">GENERATE</span><img id="generate_icon"src="assets/replay.png" alt="Generate" height="30px"></button>
+        </div>          
     </div>
     <div class="git-logo">
         <a href="https://github.com/insertyourusernamehere/PassWizard" target="_blank">
